@@ -10,10 +10,60 @@ Element Selectors
 Class Selectors
 ****************/
 
-/*.flexbox {
-    display: flexbox;
+.card {
+    border: 1px solid lightblue;
+    margin: 1em;
 }
 
-.card {
-    width: 30%;
-}*/
+.card h2 {
+    border: 1px dotted lightgray;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.card .description {
+    text-align: justify;
+}
+
+.specification p,
+.card .description,
+.pricing p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.specification h3,
+.pricing h3 {
+    margin-left: 10px;
+}
+
+.specification p {
+    font-weight: bold;
+}
+
+.availability {
+    color: yellow;
+    background-color: darkgray;
+    padding: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/****************
+Media Queries
+****************/
+
+@media (min-width: 600px){
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 30%;
+    }
+}
