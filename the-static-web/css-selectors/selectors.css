@@ -1,0 +1,69 @@
+
+/***************
+Element Selectors
+***************/
+
+header {
+    border: 1px solid black;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin-right: 1em;
+}
+
+.grandparent > h4 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/***************
+Class Selectors
+***************/
+
+.promo {
+    font-weight: bold;
+    color: gold;
+}
+
+.red {
+    color: red;
+}
+
+.red + h4 {
+    background-color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue + h4 {
+    background-color: blue;
+}
+
+.active {
+    color: yellow
+}
+
+a .disabled {
+    color: purple;
+}   
+
+/***************
+Pseudo Selectors
+***************/
+
+.disabled:not(a){
+    color: gray;
+}
+
+/***************
+Attribute Selectors
+***************/
+
+input[type=text] {
+    height: 25px;
+}
